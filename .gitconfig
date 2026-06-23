@@ -1,0 +1,10 @@
+[user]
+        username = Fuinny
+        name = Semion Medvedev
+        email = 126599206+Fuinny@users.noreply.github.com
+[init]
+        defaultBranch = main
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[alias]
+	amend-with-date = !GIT_COMMITTER_DATE=\"$(git log -1 --format=%cD)\" git commit --amend --no-edit

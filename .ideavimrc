@@ -1,0 +1,19 @@
+set clipboard=unnamed                   " Use the OS clipboard
+set backspace=indent,eol,start          " Allow backspace in insert mode
+
+set gdefault                            " Enable g flag by default
+set hlsearch                            " Highlight search results
+set incsearch                           " Highlight search results dynamically
+set ignorecase                          " Ignore case when searching...
+set smartcase                           " ...unless a capital letter is typed
+
+set number                              " Enable line numbers
+set relativenumber                      " Enable relative line numbers
+set scrolloff=5                         " Keep 5 lines visible above/below cursor
+
+let mapleader = " "
+
+inoremap kj <Esc>
+nnoremap <Leader>o o<Esc>o
+nnoremap <Leader>O O<Esc>O
+
