@@ -1,0 +1,5 @@
+# Set custom Zsh config location
+export ZDOTDIR="$HOME/.config/zsh"
+
+# Load the real .zshenv inside .config/zsh if it exists
+[[ -f "$ZDOTDIR/.zshenv" ]] && source -- "$ZDOTDIR/.zshenv"

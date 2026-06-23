@@ -1,0 +1,39 @@
+# History Configuration
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+HISTFILE="$ZDOTDIR/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+
+# Enable Auto Complete
+autoload -Uz compinit
+compinit -d "$ZDOTDIR/.zcompdump"
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Environment Setup
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.dotnet/tools:$PATH"
+
+# Homebrew Settings
+export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_UPGRADE_GREEDY_CASKS=1
+
+# Opt-out of Microsoft .NET telemetry
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# Aliases
+alias cs="csharprepl"
+alias fmc="fm char --model system"
+alias tccr="tccutil reset All"
+alias btmr="sudo sfltool resetbtm"
+alias qclr="sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias update='(
+    brew update
+    brew upgrade
+    brew autoremove
+    brew cleanup -s
+    brew doctor
+    npm install -g npm@latest
+    npm update -g
+)'
