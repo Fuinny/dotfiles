@@ -1,0 +1,50 @@
+{
+    // Telemetry & diagnostics
+    "telemetry.telemetryLevel": "off",
+    "telemetry.feedback.enabled": false,
+    "telemetry.editStats.enabled": false,
+    "telemetry.editStats.showStatusBar": false,
+    "telemetry.editStats.details.enabled": false,
+    "telemetry.editStats.showDecorations": false,
+    "editor.experimental.treeSitterTelemetry": false,
+    
+    // AI features
+    "chat.disableAIFeatures": true,
+    "workbench.settings.showAISearchToggle": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+
+    // Confirmation popups
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // Editor
+    "editor.rulers": [
+        120
+    ],
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Light Modern",
+
+    // Terminal
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "Terminal.app",
+
+    // Git integration
+    "git.enabled": false,
+
+    // Vim plugin
+    "vim.smartRelativeLine": true,
+
+    // C & C++
+    "lldb.launch.terminal": "external",
+    "C_Cpp.intelliSenseEngine": "disabled",
+
+    // CMake
+    "cmake.debugConfig": {
+        "type": "lldb",
+        "externalConsole": true,
+        "console": "externalTerminal",
+    },
+}
